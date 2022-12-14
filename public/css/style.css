@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;   
+}
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+/*BODY*/
+body{
+    background-color: var(--GrisClaro);
+    width: 100%;
+    /* border: dashed 2px salmon; */
+}
+/*Header*/
+    /*header*/
+.main-header{
+    background-color: var(--Amarillo);
+    padding: 20px;
+    width: 100%;
+    }
+
+
+
+    /*barra de busqueda+logo hay un poco apenas arriba correspondiente al logo*/
+.main-header-top-bar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}  
+.img-logo{ 
+    width: 50%;
+} 
+.top-bar-con-busqueda{
+    display: flex;
+    flex-wrap: wrap;/**/ 
+}    
+.barra-de-busqueda{   
+    /* display: flex;  */
+    text-align: center;
+    width: 50%;
+}
+.busquedar-por-nombre{
+    width: 80%;
+ 
+}
+        /*lupa*/
+.bx-search-alt-2{
+    margin-left: 2px;
+    margin-right: 2px;
+    
+    
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+} 
+    /*Hamburguesa*/
+.boton-hamburguesa{
+    background-color: var(--Celeste);
+    color: #ffffff;
+    display: block;
+    max-width: 35px;
+    padding: 2px 0;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 1.5em;
+    margin: auto; /*centra la hamburguesa al medio, necesita el display: block*/
+}
+
+    /*nav-bar*/
+.nav-bar {    /*en teoria no deberia estar en la vista movil, por eso el display: none, pero de todos modos, ya cuenta con las propiedades que  configuramos a continuacion, comentar el display: none para ver como quedó*/
+    display: none;
+}
+.nav-bar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+}
+
+
+    /*HAMBURGUESA de abajo, para borrar son estas 3 class*/
+.navegacion{ 
+     text-align: left; 
+}
+.hamburguer{
+    display: none; /*está oculta, pero es para sacarme la duda en clase*/
+    text-align: center;
+       
+}
+.bx-menu{ color: white;
+    background-color:  var(--Celeste);
+    font-size: 2em;
+    border-radius: 20%;
+    margin: 1em;
+    }
+
+
+
+/*BANNER*/
+.banner{ width: 100%;
+    display: block;  
+}
+
+
+/*Main*/
+main{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*Iconos*/
+
+.bxs-donate-heart{
+    margin-left: 2em;
+}
+
+h2{ margin: 15px;
+    color: var(--GrisOscuro);
+    text-align: left;
+    font-size: 24px;
+}
+
+/*PRODUCTOS*/
+.product-gallery{ text-align: center;
+}
+.box-product{
+    background-color: white;
+    margin-bottom: 10px;
+    }
+.box-product:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.box-product:hover .product-name{
+    display: block;
+}
+.img-product{
+    width: 75%;
+    padding: 0.5rem;
+} 
+
+
+.descripcion-product{
+    border-top: solid 1px #ebebeb;
+    padding: 15px;
+    text-align: left;
+    position: relative;
+}
+.precio-producto-descuento{
+    display: flex;
+    height: 2rem;
+    align-items: center;
+}
+.precio{
+    font-weight: bold;
+    font-size: 18px;
+    width: 30%;
+}
+.descuento{
+    color: var(--Verde);
+    font-size: 16px;
+}
+.product-name{
+    font-weight: bold;
+    color:  var(--GrisOscuro);
+    font-size: 16px;
+    width: 70%;
+    display: none;
+}
+      /*CAMION*/
+
+.fa-truck{
+    display: block; 
+    font-size: 16px; 
+    color: var(--Verde);
+    padding: 5px; 
+    width: 30px; 
+    height: 30px; 
+    border: 1px solid var(--Verde) ; 
+    background-color: #FFF; 
+    border-radius: 50%; 
+    position: absolute; 
+    right: 20px; 
+    top: -15px; 
+}
+.fa-truck:hover{
+    transform: rotate(-45deg);
+}
+
+/*FOOTER*/
+.foot{ 
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 14px;
+}
+h4{
+    color: var(--GrisOscuro);
+    font-size: 16px;
+}
+.gift, .card, .security{
+    font-size: 2em;
+    padding-top: 10px;
+    color: var(--Celeste);
+ }
+ .gift:hover{
+    color: rgb(170, 12, 12);
+ }
+ .card:hover{
+    color: #EAC926;
+ }
+ .security:hover{
+    color: var(--Verde);
+ }
+ .cuerpo-de-texto{
+    font-size: 14px;
+ }
+.copy-right{
+    text-align: left;
+    font-size: 12px;
+    margin-top: 20px;
+} 
+
+
+/*PUEDE QUE ESTAS MEDIA no vayan, preguntatl a Leo*/
+@media ( min-width: 768px) {
+/*header*/   
+.main-header-top-bar{
+    display: flex;
+    flex-direction: row;
+}  
+.top-bar-con-busqueda{
+    width: 67%;
+    justify-content: space-around;
+    
+}
+.barra-de-busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy-header{
+    width: 33%;
+    text-align: left;
+}
+    /*hamburguesa*/
+.boton-hamburguesa{
+    display: none; /*en teoria en tablet no iria, pero por las dudas lo configure*/
+    max-width: 55px;
+    padding: 10px 0;
+    font-size: 2em;
+} 
+    /*nav-bar*/ 
+.nav-bar{
+    display: flex;
+    justify-content: space-between;    
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar li{
+    padding: 0 5px;
+}
+/*main*/
+
+/*PRODUCTO ("supesto")*/
+.box-product{ 
+    width: 45%;
+    margin: 5px;
+    padding: 5px;
+}
+.product-container{
+    /* border: dashed 2px orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.descuento{
+    text-align: right;
+    margin-left: auto;
+}
+}
+@media (min-width: 1200px){
+/*Header*/
+.main-header-top-bar{
+    display: flex;/*todo*/
+    width: 100%;
+} 
+.img-logo{
+    width: 33%;/**/
+}
+.main-header-top-bar{
+    /* align-items: center; lo alinea de manera vertical */
+}
+.copy-header{
+    margin: 0;
+    font-size: 22px;
+    width: 33%;/*none*/
+}
+    /*nav-bar*/
+.nav-bar{
+    margin-top: 50px;
+}    
+.nav-bar li{
+    padding: 0 10px;
+}
+.nav-bar a{
+    font-size: 20px;
+}  
+
+
+/*PRODUCTO ("supesto")*/
+
+.box-product{ 
+    width: 22%;
+    margin: 5px;
+    padding: 5px;
+}
+.product-container{
+    /* border: dashed 2px orange; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*FOOTER*/
+.foot{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+ 
+}
+.foot-card{
+    width: 33%;
+}
+}
+
+

@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+/*BODY*/
+.body-container{
+    background-color: var(--GrisClaro) ;
+}
+
+/*FORM*/
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    /* border: dashed 2px salmon; */
+    margin: auto;
+    background-color: var(--GrisClaro);
+    height: 60vh;
+    justify-content: center;
+}
+
+.campoLog, .conecting{
+    /* border: solid 1px greenyellow; */
+    font-size: 20px;
+    margin-top: 1rem;
+    
+}
+.campoLog{
+    display: flex;
+    flex-direction: column;
+}
+.campoLog input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+.conecting{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.conecting button{ 
+    width: 100%;
+    height: 2rem;
+    background-color: var(--Celeste);
+    border-radius: 8px;
+    font-size: 20px;
+    color: #ffffff;
+}
+button:hover{
+    background-color: #0022AA;
+}
+
+@media ( min-width: 768px){
+    /*FORM*/
+    .login{
+        max-width: 450px;
+    }    
+}

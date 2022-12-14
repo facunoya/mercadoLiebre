@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --GrisOscuro: #666;
+    --GrisClaro: #ebebeb;
+    --Verde: #39b54a;
+}
+/*BODY*/
+.body-container{
+    background-color: var(--GrisClaro) ;
+}
+
+/*FORM*/
+form{display: flex;
+flex-direction: column;
+}
+
+.register-form{
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+    padding-bottom: 1rem;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+    /*data form*/
+.dataUser{
+    /* border: dashed 2px salmon; */
+    
+}
+.dataUserInput{
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.dataUserInput input{
+    border: solid 1px #000000;
+} 
+    /* perfil */
+.perfil-user{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+
+}
+.radioConatiner{
+    /* border: 1px solid green; */
+    margin-top: 1rem;
+}  
+
+/*INTERESES*/
+.userLikes{
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+} 
+.likeContainer{
+    /* border: 1px solid green; */
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+/*USER*/
+.userLog{    
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+}
+.userLogInput{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.passUser{
+    border: solid 1px #000000;
+}
+
+.userLogInput button{
+    background-color: var(--Celeste);
+    margin-bottom: 1rem;
+}
+
+
+@media ( min-width: 768px){
+    /*FORM*/
+    .register-form{
+        max-width: 450px;
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
