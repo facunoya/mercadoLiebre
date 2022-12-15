@@ -143,12 +143,7 @@ h2{ margin: 15px;
     background-color: white;
     margin-bottom: 10px;
     }
-.box-product:hover {
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-.box-product:hover .product-name{
-    display: block;
-}
+
 .img-product{
     width: 75%;
     padding: 0.5rem;
@@ -180,7 +175,8 @@ h2{ margin: 15px;
     color:  var(--GrisOscuro);
     font-size: 16px;
     width: 70%;
-    display: none;
+    display: block;
+    visibility: hidden;
 }
       /*CAMION*/
 
@@ -284,6 +280,13 @@ h4{
     margin: 5px;
     padding: 5px;
 }
+.box-product:hover {
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.box-product:hover .product-name{
+    display: block;
+    visibility: visible;
+}
 .product-container{
     /* border: dashed 2px orange; */
     display: flex;
@@ -295,7 +298,7 @@ h4{
     margin-left: auto;
 }
 }
-@media (min-width: 1200px){
+@media (min-width: 980px){
 /*Header*/
 .main-header-top-bar{
     display: flex;/*todo*/
